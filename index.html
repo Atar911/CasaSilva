@@ -23,32 +23,60 @@
     html { scroll-behavior: smooth; }
     body { font-family: Georgia, 'Times New Roman', serif; background: var(--beige); color: var(--testo); }
 
-   nav {
+  /* ── NAV ── */
+    nav {
       position: sticky; top: 0; z-index: 100;
       display: flex; justify-content: space-between; align-items: center;
-      padding: 16px 48px;
+      padding: 24px 48px;
       background: #cc7a29;
       border-bottom: 1px solid var(--beige-scuro);
     }
     .nav-logo {
-      font-size: 17px; font-weight: 700; letter-spacing: 4px;
+      font-size: 22px; font-weight: 700; letter-spacing: 4px;
       color: #e8f8c0; text-decoration: none;
     }
     .nav-links { display: flex; gap: 32px; }
     .nav-links a {
       font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2px;
-      color: #e8d8c0; text-decoration: none; text-transform: uppercase;
+      color: #ffffff; text-decoration: none; text-transform: uppercase;
       transition: color .2s;
     }
-    .nav-links a:hover { color: #ffffff; }
-
+    .nav-links a:hover { color: #e8f8c0; }
+ 
+    /* ── GALLERIA ── */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      background: #1a1a1a;
+      padding: 0;
+    }
+    .gallery-item {
+      aspect-ratio: 5/4;
+      background: #c8d8b8 center/cover no-repeat;
+    }
+    .gallery-item:nth-child(2) { background-color: #b8c8a8; }
+    .gallery-item:nth-child(3) { background-color: #a8b898; }
+    .gallery-item:nth-child(4) { background-color: #98a888; }
+    .gallery-placeholder {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #7a8a70; font-family: Arial, sans-serif;
+      font-size: 12px; letter-spacing: 1px; text-align: center;
+      padding: 12px; gap: 6px;
+    }
+    .gallery-placeholder span { font-size: 22px; }
+    @media (max-width: 768px) {
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+    }
+ 
     /* ── HERO ── */
     .hero {
       min-height: 88vh;
       background: linear-gradient(165deg, #b8d4b0 0%, #7a9a60 45%, #3a5a28 100%);
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
-      text-align: center; padding: 80px 40px 120px;
+      text-align: center; padding: 20px 40px 120px;
       position: relative; overflow: hidden;
     }
     .hero-mountains {
@@ -76,7 +104,7 @@
       border-radius: 2px; transition: background .2s, color .2s;
     }
     .btn-primary:hover { background: var(--beige); }
-
+ 
     /* ── STRIP ── */
     .strip {
       display: grid; grid-template-columns: repeat(3, 1fr);
@@ -95,7 +123,7 @@
       color: var(--verde-scuro); margin-bottom: 8px;
     }
     .strip-item p { font-size: 14px; color: var(--testo-light); line-height: 1.6; }
-
+ 
     /* ── SEZIONI COMUNI ── */
     .section { padding: 80px 48px; }
     .section-inner { max-width: 1100px; margin: 0 auto; }
@@ -104,7 +132,7 @@
       color: var(--verde-chiaro); text-transform: uppercase; margin-bottom: 12px;
     }
     .section-title { font-size: 32px; color: var(--verde-scuro); margin-bottom: 24px; line-height: 1.2; }
-
+ 
     /* ── LA CASA ── */
     .about { background: var(--bianco); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
@@ -118,7 +146,7 @@
       text-align: center; padding: 24px;
       /* Sostituisci con: background-image: url('foto.jpg'); background-size: cover; */
     }
-
+ 
     /* ── SERVIZI ── */
     .amenities { background: var(--beige); }
     .amenities-grid {
