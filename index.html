@@ -24,22 +24,24 @@
     body { font-family: Georgia, 'Times New Roman', serif; background: var(--beige); color: var(--testo); }
 
   /* ── NAV ── */
-    nav {
-  position: sticky; top: 0; z-index: 100;
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 48px;
   background: #cc7a29;
   border-bottom: 1px solid var(--beige-scuro);
-  position: relative;
-}
+  min-height: 70px;
+    }
 .nav-center-logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+    }
     }
     .nav-center-logo { display: flex; justify-content: center; }
     .nav-center-logo svg { width: 170px; height: auto; display: block; }
@@ -227,7 +229,7 @@
     .amenity span { font-size: 15px; color: var(--testo); }
     
      /* ── MAPPA ── */
-    .map-section { background: #eef2e8; }
+    .map-section { background: #ffffff; }
     .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
     .map-embed {
       position: relative; width: 100%; aspect-ratio: 4/3;
