@@ -36,7 +36,7 @@
       color: #e8f8c0; text-decoration: none;
     }
     .nav-center-logo { display: flex; justify-content: center; }
-    .nav-center-logo svg { width: 70px; height: 20px; display: block; }
+    .nav-center-logo svg { width: 170px; height: auto; display: block; }
     .nav-links { display: flex; gap: 32px; justify-content: flex-end; }
     .nav-links a {
       font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2px;
@@ -345,27 +345,38 @@
    <!-- NAV -->
   <nav>
     <a class="nav-logo" href="#">CASA SILVA</a>
-        <div class="nav-center-logo">
-      <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="80,180 200,80 320,180" fill="none"/>
-        <polygon points="108,200 6,250 134,250" fill="#ffffff" opacity="0"/>
+    <div class="nav-center-logo">
+      <svg viewBox="20 90 620 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- montagne laterali -->
+        <polygon points="80,260 200,110 320,260" fill="#ffffff" opacity="0.5"/>
+        <polygon points="200,260 340,90 480,260" fill="#ffffff" opacity="0.7"/>
+        <polygon points="360,260 480,130 600,260" fill="#ffffff" opacity="0.5"/>
+        <!-- striscia prato -->
+        <rect x="40" y="252" width="600" height="14" rx="2" fill="#ffffff" opacity="0.6"/>
         <!-- alberi -->
-        <rect x="108" y="155" width="6" height="40" fill="#ffffff"/>
-        <polygon points="111,108 88,165 134,165" fill="#ffffff"/>
-        <polygon points="111,128 91,172 131,172" fill="#ffffff"/>
-        <rect x="538" y="150" width="7" height="45" fill="#ffffff"/>
-        <polygon points="541,98 516,160 566,160" fill="#ffffff"/>
-        <polygon points="541,120 519,168 563,168" fill="#ffffff"/>
+        <rect x="108" y="200" width="6" height="45" fill="#ffffff"/>
+        <polygon points="111,145 88,210 134,210" fill="#ffffff"/>
+        <polygon points="111,165 91,218 131,218" fill="#ffffff"/>
+        <rect x="538" y="195" width="7" height="50" fill="#ffffff"/>
+        <polygon points="541,138 516,205 566,205" fill="#ffffff"/>
+        <polygon points="541,160 519,213 563,213" fill="#ffffff"/>
         <!-- casa -->
-        <rect x="255" y="125" width="170" height="70" rx="3" fill="#ffffff"/>
-        <polygon points="235,128 340,75 445,128" fill="#ffffff"/>
-        <rect x="375" y="80" width="14" height="28" rx="2" fill="#ffffff"/>
-        <!-- porta -->
-        <rect x="323" y="160" width="34" height="35" rx="3" fill="#cc7a29"/>
+        <rect x="255" y="165" width="170" height="90" rx="3" fill="#ffffff"/>
+        <polygon points="235,168 340,108 445,168" fill="#ffffff"/>
+        <rect x="375" y="112" width="14" height="32" rx="2" fill="#ffffff"/>
+        <rect x="372" y="108" width="20" height="7" rx="2" fill="#ffffff"/>
+        <!-- balconi -->
+        <rect x="255" y="195" width="170" height="6" rx="1" fill="#cc7a29"/>
+        <rect x="255" y="228" width="170" height="6" rx="1" fill="#cc7a29"/>
         <!-- finestre -->
-        <rect x="275" y="132" width="24" height="16" rx="2" fill="#cc7a29"/>
-        <rect x="315" y="132" width="24" height="16" rx="2" fill="#cc7a29"/>
-        <rect x="385" y="132" width="24" height="16" rx="2" fill="#cc7a29"/>
+        <rect x="275" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="315" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="355" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="395" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="265" y="207" width="24" height="18" rx="2" fill="#cc7a29"/>
+        <rect x="390" y="207" width="24" height="18" rx="2" fill="#cc7a29"/>
+        <!-- porta -->
+        <rect x="323" y="207" width="34" height="27" rx="3" fill="#cc7a29"/>
       </svg>
     </div>
     <div class="nav-links">
@@ -669,7 +680,7 @@
           <!-- Sostituisci il link "src" con quello del tuo paese da Google Maps:
                Google Maps → cerca il paese → Condividi → Incorpora una mappa → copia il link "src" qui sotto -->
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5536.341931947236!2d11.604539595906513!3d46.06763208436072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477892b1ea0c33bb%3A0x3d3a36ceb1d59471!2s38050%20Pieve%20Tesino%20TN!5e0!3m2!1sit!2sit!4v1782207065038!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44292.513972349014!2d11.589111303644207!3d46.06541548588978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477892b1ea0c33bb%3A0x3d3a36ceb1d59471!2s38050%20Pieve%20Tesino%20TN!5e0!3m2!1sit!2sit!4v1782207840455!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             allowfullscreen>
@@ -714,21 +725,38 @@
     <div class="info-footer-col center">
       <div class="info-footer-logo">
         <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
-          <rect x="108" y="155" width="6" height="40" fill="#ffffff"/>
-          <polygon points="111,108 88,165 134,165" fill="#ffffff"/>
-          <polygon points="111,128 91,172 131,172" fill="#ffffff"/>
-          <rect x="538" y="150" width="7" height="45" fill="#ffffff"/>
-          <polygon points="541,98 516,160 566,160" fill="#ffffff"/>
-          <polygon points="541,120 519,168 563,168" fill="#ffffff"/>
-          <rect x="255" y="125" width="170" height="70" rx="3" fill="#ffffff"/>
-          <polygon points="235,128 340,75 445,128" fill="#ffffff"/>
-          <rect x="375" y="80" width="14" height="28" rx="2" fill="#ffffff"/>
-          <rect x="323" y="160" width="34" height="35" rx="3" fill="#2e3d22"/>
-          <rect x="275" y="132" width="24" height="16" rx="2" fill="#2e3d22"/>
-          <rect x="315" y="132" width="24" height="16" rx="2" fill="#2e3d22"/>
-          <rect x="385" y="132" width="24" height="16" rx="2" fill="#2e3d22"/>
-        </svg>
-      </div>
+        <!-- montagne laterali -->
+        <polygon points="80,260 200,110 320,260" fill="#ffffff" opacity="0.5"/>
+        <polygon points="200,260 340,90 480,260" fill="#ffffff" opacity="0.7"/>
+        <polygon points="360,260 480,130 600,260" fill="#ffffff" opacity="0.5"/>
+        <!-- striscia prato -->
+        <rect x="40" y="252" width="600" height="14" rx="2" fill="#ffffff" opacity="0.6"/>
+        <!-- alberi -->
+        <rect x="108" y="200" width="6" height="45" fill="#ffffff"/>
+        <polygon points="111,145 88,210 134,210" fill="#ffffff"/>
+        <polygon points="111,165 91,218 131,218" fill="#ffffff"/>
+        <rect x="538" y="195" width="7" height="50" fill="#ffffff"/>
+        <polygon points="541,138 516,205 566,205" fill="#ffffff"/>
+        <polygon points="541,160 519,213 563,213" fill="#ffffff"/>
+        <!-- casa -->
+        <rect x="255" y="165" width="170" height="90" rx="3" fill="#ffffff"/>
+        <polygon points="235,168 340,108 445,168" fill="#ffffff"/>
+        <rect x="375" y="112" width="14" height="32" rx="2" fill="#ffffff"/>
+        <rect x="372" y="108" width="20" height="7" rx="2" fill="#ffffff"/>
+        <!-- balconi -->
+        <rect x="255" y="195" width="170" height="6" rx="1" fill="#cc7a29"/>
+        <rect x="255" y="228" width="170" height="6" rx="1" fill="#cc7a29"/>
+        <!-- finestre -->
+        <rect x="275" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="315" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="355" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="395" y="172" width="28" height="20" rx="2" fill="#cc7a29"/>
+        <rect x="265" y="207" width="24" height="18" rx="2" fill="#cc7a29"/>
+        <rect x="390" y="207" width="24" height="18" rx="2" fill="#cc7a29"/>
+        <!-- porta -->
+        <rect x="323" y="207" width="34" height="27" rx="3" fill="#cc7a29"/>
+      </svg>
+    </div>
     </div>
 
       <div class="info-footer-col right">
